@@ -6,4 +6,23 @@
 
 {% block body %}
     <h1>New body</h1>
+    <ul class="section-select">
+        <div class="dropdown-section dropdown-inlist1">
+            <li><a class="toggle1" onclick="toggleDropdown($(this).attr('class'));">Contest 1</a></li>
+
+            <ul class="dropdown-content">
+                <li>Computer number systems</li>
+                <li>Recursive Functions</li>
+            </ul>
+        </div>
+        <div class="dropdown-section dropdown-inlist2">
+            <li><a class="toggle2" onclick="toggleDropdown($(this).attr('class'));">Contest 2</a></li>
+
+            <ul class="dropdown-content">
+                <li>Notation</li>
+                <li>LISP</li>
+            </ul>
+        </div>
+    </ul>
+    
 {% endblock %}

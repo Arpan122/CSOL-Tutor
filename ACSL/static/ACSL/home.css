@@ -1,0 +1,27 @@
+.section-select {
+    list-style: none;
+    padding: 0px;
+	margin: 10px;
+	margin-top: 25px;
+}
+
+.dropdown-section a {
+    background: aquamarine;
+    display: block;
+    width: 130px;
+    padding: 10px 30px;
+    border: 1px solid aqua;
+}
+
+.dropdown-content {
+    display: none;
+    list-style: none;
+    padding: 0 5px;
+}
+
+.dropdown-content li {
+    background: aquamarine;
+    width: 170px;
+    padding: 5px 10px;
+    border: 1px solid aqua;
+}
