@@ -13,15 +13,13 @@ function toggleDropdown(element) {
             break;
     }
 
-    dropDownlist = '.dropdown-inlist* .dropdown-content'
-    dropDownlist = dropDownlist.replace('*', a)
+    dropDownlist = '.dropdown-inlist* .dropdown-content';
+    dropDownlist = dropDownlist.replace('*', a);
 
     if ($(dropDownlist).hasClass('show')) {
-        $(dropDownlist).hide();
         $(dropDownlist).removeClass('show');
     }
     else {
-        $(dropDownlist).show();
         $(dropDownlist).addClass('show');
     }
 }

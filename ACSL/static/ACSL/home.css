@@ -19,6 +19,10 @@
     padding: 0 5px;
 }
 
+.show {
+    display: block;
+}
+
 .dropdown-content li {
     background: aquamarine;
     width: 170px;
