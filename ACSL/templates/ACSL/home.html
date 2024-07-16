@@ -5,7 +5,10 @@
 {% endblock %}
 
 {% block body %}
-    <h1>New body</h1>
+    <div class="title">
+        <h1>ACSL related videos</h1>
+    </div>
+    
     <ul class="section-select">
         <div class="dropdown-section dropdown-inlist1">
             <li><a class="toggle1" onclick="toggleDropdown($(this).attr('class'));">Contest 1</a></li>
@@ -13,13 +16,14 @@
             <ul class="dropdown-content">
                 <li>Computer number systems</li>
                 <li>Recursive Functions</li>
+                <li>Interpreting programs</li>
             </ul>
         </div>
         <div class="dropdown-section dropdown-inlist2">
             <li><a class="toggle2" onclick="toggleDropdown($(this).attr('class'));">Contest 2</a></li>
 
             <ul class="dropdown-content">
-                <li>Notation</li>
+                <li>Prefix, Infix and Postfix Notation</li>
                 <li>LISP</li>
             </ul>
         </div>
