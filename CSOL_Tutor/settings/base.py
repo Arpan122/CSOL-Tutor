@@ -30,8 +30,13 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
 ]
 
+#Crispy Styles Vars
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
+#Login Redirects
+LOGIN_REDIRECT_URL = 'Home-home'
+LOGIN_URL = 'Home-login'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
