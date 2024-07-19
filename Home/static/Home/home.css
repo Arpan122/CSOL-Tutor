@@ -1,0 +1,41 @@
+body {
+    background-color: lightgrey;
+}
+
+.submit {
+    margin-bottom: 5px;
+}
+
+.login-content {
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+.register-content {
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+.logout-content {
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.home-content {
+    margin: auto;
+}
+
+.banner-img {
+    background-color: red;
+    width: 100%;
+    height: 20%;
+}

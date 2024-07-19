@@ -3,22 +3,22 @@
 
 {% block title %}Login{% endblock %}
 {% block body %}
-    <div class="login-content">
-        <form method="post">
+    <div class="login-content w-50">
+        <form method="post" autocomplete="off">
             {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Login</legend>
                 {{ form|crispy }}
             </fieldset>
             <div class="form-group">
-                <button class="btn btn-outline-info" type="submit">Login</button>
+                <button class="btn btn-primary submit" type="submit">Login</button>
             </div>
         </form>
 
-        <div class="border-top pt-3">
+        <div class="border-top pt-1">
             <small class="text-muted">
                 Don't have an account? 
-                <a href="{% url 'Home-register' %}" class="ml-2">Login</a>
+                <a href="{% url 'Home-register' %}" class="ml-2">Register</a>
             </small>
         </div>
     </div>

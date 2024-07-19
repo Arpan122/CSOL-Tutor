@@ -1,12 +1,17 @@
 {% extends "Home/base.html" %}
+{% load static %}
 
 {% block title %}Logout{% endblock %}
 {% block body %}
-    <div class="logout-content">
+    <div class="logout-content w-50">
         <h2>Your have been successfully logged out!</h2>
-        <div class="border-top pt-3">
+        <p>You can close this tab or go back to home screen.</p>
+        <div class="border-top pt-2">
             <small class="text-muted">
-                <a href="{% url 'Home-home' %}" class="ml-2">Back to home</a>
+                <a href="{% url 'Home-home' %}" class="ml-2">
+                    <img width="12" src="{% static 'Home/back_home.jpg' %}">
+                    Back to home
+                </a>
             </small>
         </div>
     </div>
