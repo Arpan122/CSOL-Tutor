@@ -1,5 +1,21 @@
 body {
-    background-color: lightgrey;
+    background-color: #96B360;
+}
+
+input[type=text],
+input[type=text]:focus,
+input[type=password],
+input[type=password]:focus,
+input[type=email],
+input[type=email]:focus {
+    background-color: #ABB39C;
+    border: 1.5px solid #333127;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+    box-shadow: 0px 0px 2px 3px #5D71B0;
 }
 
 .submit {
@@ -11,7 +27,8 @@ body {
     margin-top: 30px;
     border-radius: 5px;
     padding: 10px;
-    background-color: white;
+    border: 1.5px solid #332C02;
+    background-color: #B3A760;
 }
 
 .register-content {
@@ -19,14 +36,16 @@ body {
     margin-top: 30px;
     border-radius: 5px;
     padding: 10px;
-    background-color: white;
+    border: 1.5px solid #332C02;
+    background-color: #B3A760;
 }
 
 .logout-content {
     margin: auto;
     margin-top: 20px;
-    background-color: white;
+    background-color: #B3A760;
     padding: 5px;
+    border: 1.5px solid #332C02;
     border-radius: 5px;
 }
 
@@ -36,6 +55,21 @@ body {
 
 .banner-img {
     background-color: red;
-    width: 100%;
-    height: 20%;
+    height: 300px;
+    padding: 0;
+}
+
+.discord-btn {
+    width: 15%;
+    background-color: #5D71B0;
+}
+
+.discord-btn:hover {
+    border: 1px solid #333127;
+    background-color: gray;
+}
+
+.banner-center > h1 {
+    text-align: center;
+    margin: auto;
 }
