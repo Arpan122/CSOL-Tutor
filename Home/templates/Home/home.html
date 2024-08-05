@@ -4,17 +4,43 @@
 {% block title %} Home {% endblock %}
 {% block body %}
     <div class="home-content container-fluid">
-        <div class="banner-img row justify-content-center align-items-center text-center">
-            <div class="banner-center col-10 ">
-                <h1>
-                    <span class="typeText" data-txt="We're working on a web design course,We're working on an ACSL course,We're working on alot of things.."></span>
-                </h1>
-                <h3>CSOL is BASE's computer science club</h3>
-                <a href="https://discord.gg/bQbqZ5MtXS" class="btn discord-btn btn-custom mt-4">
-                    <img src="{% static 'Home/images/discord-logo.png' %}" width="20px">
-                    Join our discord
-                </a>
+        <section class="home">
+            <div class="banner-img row justify-content-center align-items-center text-center">
+                <div class="banner-center col-10 ">
+                    <h1>
+                        <span class="typeText" data-txt="We're working on a web design course,We're working on an ACSL course,We're working on alot of things.."></span>
+                    </h1>
+                    <h3>CSOL is BASE's computer science club</h3>
+                    <a href="https://discord.gg/bQbqZ5MtXS" class="btn discord-btn btn-custom mt-4">
+                        <img src="{% static 'Home/images/discord-logo.png' %}" width="20px">
+                        Join our discord
+                    </a>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="about-us">
+            <h1>About us</h1>
+            <div class="about-arpan">
+                <h2>Arpan Bhattacharjee</h2>
+            </div>
+
+            <div class="about-alan">
+                <h2>Alan Kurian John</h2>
+            </div>
+
+            <div class="about-*" style="text-align: center;">
+                <h2>About *</h2>
+                <h3>TBD Who will be here</h3>
+            </div>
+        </section>
+
+        <section class="mission"></section>
+
+        <section class="activites"></section>
+        
+        <section class="calendar"></section>
+
+        <section class="footer"></section>
     </div>
 {% endblock %}

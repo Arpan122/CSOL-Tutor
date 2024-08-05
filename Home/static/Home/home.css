@@ -1,5 +1,5 @@
 body {
-    background-color: #96B360;
+  background-color: #96B360;
 }
 
 input[type=text],
@@ -8,73 +8,74 @@ input[type=password],
 input[type=password]:focus,
 input[type=email],
 input[type=email]:focus {
-    background-color: #ABB39C;
-    border: 1.5px solid #333127;
+  background-color: #c4c7be;
+  border: 1.5px solid #333127;
 }
 
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=password]:focus {
-    box-shadow: 0px 0px 2px 3px #5D71B0;
+  box-shadow: 0px 0px 2px 3px #5D71B0;
 }
 
 .submit {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
-.login-content {
-    margin: auto;
-    margin-top: 30px;
-    border-radius: 5px;
-    padding: 10px;
-    border: 1.5px solid #332C02;
-    background-color: #B3A760;
-}
-
-.register-content {
-    margin: auto;
-    margin-top: 30px;
-    border-radius: 5px;
-    padding: 10px;
-    border: 1.5px solid #332C02;
-    background-color: #B3A760;
+.login-content,
+.register-content,
+.logout-content {
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1.5px solid #332C02;
+  background-color: #B3A760;
 }
 
 .logout-content {
-    margin: auto;
-    margin-top: 20px;
-    background-color: #B3A760;
-    padding: 5px;
-    border: 1.5px solid #332C02;
-    border-radius: 5px;
+  margin-top: 20px;
+  padding: 5px;
 }
 
 .home-content {
-    margin: auto;
+  margin: auto;
 }
 
 .banner-img {
-    background-color: #8460B3;
-    height: 350px;
-    padding: 0;
+  background-color: #8460B3;
+  height: 350px;
+  padding: 0;
 }
 
 .discord-btn {
-    width: 15%;
-    background-color: #60B3A4;
-    font-size: 15px;
+  width: 17%;
+  background-color: #60B3A4;
+  font-size: 100%;
 }
-
 .discord-btn:hover {
-    border: 1px solid #333127;
-    background-color: gray;
+  border: 1px solid #333127;
+  background-color: gray;
 }
 
 .banner-center > h1 {
-    font-size: 50px;
+  font-size: 50px;
+}
+.banner-center > h3 {
+  text-align: center;
+  margin: auto;
 }
 
-.banner-center > h3 {
-    text-align: center;
-    margin: auto;
+.about-us h1 {
+  text-align: center;
 }
+.about-us div {
+  background-color: #60A5B3;
+  border-radius: 10px;
+  padding: 5px 7px;
+  margin-bottom: 10px;
+}
+
+.about-alan {
+  text-align: right;
+}/*# sourceMappingURL=home.css.map */
