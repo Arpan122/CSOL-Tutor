@@ -1,5 +1,5 @@
 body {
-  background-color: #96B360;
+  background-color: #A9ED80;
 }
 
 input[type=text],
@@ -8,7 +8,7 @@ input[type=password],
 input[type=password]:focus,
 input[type=email],
 input[type=email]:focus {
-  background-color: #c4c7be;
+  background-color: white;
   border: 1.5px solid #333127;
 }
 
@@ -16,6 +16,11 @@ input[type=text]:focus,
 input[type=email]:focus,
 input[type=password]:focus {
   box-shadow: 0px 0px 2px 3px #5D71B0;
+}
+
+hr {
+  width: 80%;
+  margin: 5px auto;
 }
 
 .submit {
@@ -30,7 +35,7 @@ input[type=password]:focus {
   border-radius: 5px;
   padding: 10px;
   border: 1.5px solid #332C02;
-  background-color: #B3A760;
+  background-color: #bfd4b2;
 }
 
 .logout-content {
@@ -42,22 +47,12 @@ input[type=password]:focus {
   margin: auto;
 }
 
-.banner-img {
-  background-color: #8460B3;
-  height: 350px;
+.banner {
+  background-color: #808CED;
+  height: 70vh;
   padding: 0;
+  display: flex;
 }
-
-.discord-btn {
-  width: 17%;
-  background-color: #60B3A4;
-  font-size: 100%;
-}
-.discord-btn:hover {
-  border: 1px solid #333127;
-  background-color: gray;
-}
-
 .banner-center > h1 {
   font-size: 50px;
 }
@@ -66,16 +61,70 @@ input[type=password]:focus {
   margin: auto;
 }
 
-.about-us h1 {
-  text-align: center;
+.discord-btn {
+  background-color: #ED9E80;
+  font-size: 1em;
 }
-.about-us div {
-  background-color: #60A5B3;
-  border-radius: 10px;
-  padding: 5px 7px;
-  margin-bottom: 10px;
+.discord-btn:hover, .discord-btn:active, .discord-btn:focus {
+  border: 1px solid #333127;
+  background-color: gray;
+}
+.discord-btn img {
+  max-width: 20px;
+  width: 2vw;
+  min-width: 10px;
 }
 
-.about-alan {
-  text-align: right;
+.section h1 {
+  text-align: center;
+}
+
+.mission p {
+  margin: auto;
+  width: 85%;
+  text-align: center;
+}
+
+.leads div {
+  background-color: #808CED;
+  border-radius: 10px;
+}
+
+.card {
+  margin: 5px;
+}
+
+.about {
+  text-align: center;
+  overflow: hidden;
+  padding: 0px;
+  display: inline-flex;
+}
+.about h2 {
+  margin-bottom: 0px;
+}
+.about hr {
+  margin: 5px auto;
+  width: 8em;
+}
+.about-arpan h4 {
+  font-weight: normal;
+}
+.about-arpan p {
+  text-align: left;
+}
+.about-arpan img {
+  padding: 5px;
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.display-6 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.5em;
 }/*# sourceMappingURL=home.css.map */
