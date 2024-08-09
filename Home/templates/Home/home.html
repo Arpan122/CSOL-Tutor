@@ -2,9 +2,22 @@
 {% load static %}
 
 {% block title %} Home {% endblock %}
+
+{% block navItems %}
+    <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#mission">Mission</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#leads">Leadership</a>
+    </li>
+{% endblock %}
+
 {% block body %}
     <div class="home-content container-fluid">
-        <section class="home">
+        <section id="home">
             <div class="banner row justify-content-center align-items-center text-center">
                 <div class="banner-center col-12 ">
                     <h1>
@@ -20,7 +33,7 @@
         </section>
 
         <div class="main container-fluid">    
-            <section class="mission section">
+            <section id="mission" class="section">
                 <h1 class="display-4">Our Mission</h1>
                 <div>
                     <p class="">
@@ -29,46 +42,59 @@
                 </div>
             </section>
 
-            <hr>
+            <hr>    
 
-            <section class="leads section row">
+            <section id="leads" class="section">
                 <h1 class="display-4">Leadership</h1>
 
-                <div class="col-lg-1" style="background-color: transparent;"></div>
-
-                <div class="card col-lg-5">
-                    <div class="about-arpan about">
-                        <img src="{% static 'Home/images/guy.jpg' %}" class="align-self-center">
-                        <div class="about-text">
-                            <h2 class="display-6">Arpan Bhattacharjee</h2>
-                            <h4>Former President & Founder</h4>
-                            <hr>
-                            <p>The 11th grader who made this website but doesn't attend BASE anymore.<br>Been coding for 5 years and has experience in competitive programming.</p>
+                <div class="r">
+                    <div class="card">
+                        <div class="about">
+                            <img src="{% static 'Home/images/guy.jpg' %}" class="align-self-center">
+                            <div class="about-text">
+                                <h2 class="display-6" style="font-size: 1.6em;">Arpan Bhattacharjee</h2>
+                                <h4>Former President & Co-Founder</h4>
+                                <hr>
+                                <p>The 11th grader who made this website but doesn't attend BASE anymore. Has been coding for 5 years and has experience in competitive programming.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="about">
+                            <img src="{% static 'Home/images/guy.jpg' %}" class="align-self-center">
+                            <div class="about-text">
+                                <h2 class="display-6">Alan Kurian John</h2>
+                                <h4>President & Co-Founder</h4>
+                                <hr>
+                                <p>Current president and co-founder of the club. Has experience in robotics and handles most work related to ACSL.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="card col-lg-5">
-                    <div class="about-alan about">
-                        <h2 class="display-6">Alan Kurian John</h2>
-                    </div>
-                </div>
-
-                <div class="col-lg-3" style="background-color:transparent"></div>
+                <hr class="divider-hr" style="color: transparent; height: 1px; padding: 0px; margin-top: 2px; ">
                 
-                <div class="card col-lg-6">
-                    <div class="about-* about" style="text-align: center;">
-                        <h2 class="display-6">About *</h2>
-                        <p>TBD Who will be here</p>
+                <div class="r">
+                    <div class="card">
+                        <div class="about">
+                            <img src="{% static 'Home/images/guy.jpg' %}" class="align-self-center">
+                            <div class="about-text">
+                                <h2 class="display-6">About *insert name here*</h2>
+                                <p>TBD Who will be here</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class="mission"></section>
+            <hr>
 
-            <section class="activites"></section>
+            <section id="activites" class="section">
+                <h1 class="display-4">Club Activites</h1>
+            </section>
             
-            <section class="calendar"></section>
+            <section id="calendar"></section>
         </div>
         <section class="footer"></section>
     </div>

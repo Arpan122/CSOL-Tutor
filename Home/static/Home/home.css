@@ -18,11 +18,6 @@ input[type=password]:focus {
   box-shadow: 0px 0px 2px 3px #5D71B0;
 }
 
-hr {
-  width: 80%;
-  margin: 5px auto;
-}
-
 .submit {
   margin-bottom: 5px;
 }
@@ -45,6 +40,11 @@ hr {
 
 .home-content {
   margin: auto;
+}
+
+hr {
+  width: 80%;
+  margin: 5px auto;
 }
 
 .banner {
@@ -75,25 +75,50 @@ hr {
   min-width: 10px;
 }
 
+.section {
+  scroll-margin-top: 56px;
+}
 .section h1 {
   text-align: center;
 }
 
-.mission p {
+#mission p {
   margin: auto;
   width: 85%;
   text-align: center;
 }
 
-.leads div {
+#leads div div {
   background-color: #808CED;
   border-radius: 10px;
 }
 
-.card {
-  margin: 5px;
+.r {
+  text-align: center;
+  margin: auto;
+  background-color: transparent;
 }
 
+.card {
+  margin: 5px;
+  display: inline-block;
+  min-width: 300px;
+  max-width: 450px;
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    max-width: 40vw;
+    width: 40vw;
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  .card {
+    display: block;
+    margin: 5px auto;
+  }
+}
 .about {
   text-align: center;
   overflow: hidden;
@@ -107,24 +132,31 @@ hr {
   margin: 5px auto;
   width: 8em;
 }
-.about-arpan h4 {
-  font-weight: normal;
-}
-.about-arpan p {
-  text-align: left;
-}
-.about-arpan img {
+.about img {
   padding: 5px;
   width: 150px;
   height: 200px;
   border-radius: 10px;
   margin-right: 5px;
 }
+.about h4 {
+  font-weight: normal;
+}
+.about p {
+  text-align: left;
+}
 
 .display-6 {
-  font-size: 1.8rem;
+  font-size: 1.8em;
 }
 
 h4 {
   font-size: 1.5em;
+}
+
+.divider-hr {
+  color: transparent;
+  height: 1px;
+  padding: 0px;
+  margin: 0px auto;
 }/*# sourceMappingURL=home.css.map */

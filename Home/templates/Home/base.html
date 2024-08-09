@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="{% static 'Home/home.css' %}?{% now 'U' %}">
     </head>
     <body>
-        <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #170233;">
+        <nav class="navbar navbar-dark navbar-expand-lg sticky-top" style="background-color: #170233;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/" style="padding: 0;">
                     <img class="logo d-inline-block align-text-middle" width="100" height="40" src="{% static 'Home/images/Csol_logo.png' %}">
@@ -21,10 +21,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
-                        </li>
                         {% block navItems %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
                         {% endblock %}
                     </ul>
 
@@ -45,6 +45,7 @@
                 </div>
             </div>
         </nav>
+
         {% if messages %}
             {% for msg in messages %}
                 <div class="alert alert-{{ msg.tags }}">

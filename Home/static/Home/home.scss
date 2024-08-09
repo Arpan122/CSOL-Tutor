@@ -24,11 +24,13 @@ $hover-color: gray;
     }
 }
 
-
+//Styles
+//Body styles
 body {
     background-color: $bg-color;
 }
 
+//Form Styles
 input[type=text],
 input[type=text]:focus,
 input[type=password],
@@ -43,11 +45,6 @@ input[type=text]:focus,
 input[type=email]:focus,
 input[type=password]:focus {
     box-shadow: 0px 0px 2px 3px $input-field-highlight-color;
-}
-
-hr {
-    width: 80%;
-    margin: 5px auto;
 }
 
 .submit {
@@ -70,10 +67,17 @@ hr {
     padding: 5px;
 }
 
+//Home Page Styles
 .home-content {
     margin: auto;
 }
 
+hr {
+    width: 80%;
+    margin: 5px auto;
+}
+
+//Banner
 .banner {
     background-color: #808CED;
     height: 70vh;
@@ -107,14 +111,16 @@ hr {
     }
 }
 
+//Homepage Sections
 .section {
+    scroll-margin-top: 56px;
     h1 {
         text-align: center;
     }
-    
 }
 
-.mission {
+//Mission Section
+#mission {
     p {
         margin: auto;
         width: 85%;
@@ -122,17 +128,48 @@ hr {
     }
 }
 
-.leads {
+//Leadership section
+#leads {
     div {
-        background-color: #808CED;
-        border-radius: 10px;
+        div {
+            background-color: #808CED;
+            border-radius: 10px;
+        }
     }
 }
 
-.card {
-    margin: 5px;
+//Row of cards
+.r {
+    text-align: center;
+    margin: auto;
+    background-color: transparent;
 }
 
+//Individutal card
+.card {
+    margin: 5px;
+    display: inline-block;
+    min-width: 300px;
+    max-width: 450px;
+}
+
+@media screen and (min-width: 992px) {
+    .card {
+        max-width: 40vw;
+        width: 40vw;
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        display: block;
+        margin: 5px auto;
+    }
+}
+
+
+//Info within card
 .about {
     text-align: center;
     overflow: hidden;
@@ -148,26 +185,32 @@ hr {
         width: 8em;
     }
 
-    &-arpan {
-
-        h4 {
-            font-weight: normal;
-        }
-
-        p {
-            text-align: left;
-        }
-
-        img {
-            @include aboutImage(left, 150px, 200px);
-        }
+    img {
+        @include aboutImage(left, 150px, 200px);
     }
 
+    h4 {
+        font-weight: normal;
+    }
+
+    p {
+        text-align: left;
+    }
 }
 
+
+//General styles
 .display-6 {
-    font-size: 1.8rem;
+    font-size: 1.8em;
 }
+
 h4 {
     font-size: 1.5em;
+}
+
+.divider-hr {
+    color: transparent;
+    height: 1px;
+    padding: 0px;
+    margin: 0px auto;
 }
