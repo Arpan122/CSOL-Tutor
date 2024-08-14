@@ -35,7 +35,7 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 #Login Redirects
-LOGIN_REDIRECT_URL = 'Home-home'
+LOGIN_REDIRECT_URL = 'Home-dashboard'
 LOGIN_URL = 'Home-login'
 
 MIDDLEWARE = [

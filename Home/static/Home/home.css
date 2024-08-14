@@ -109,6 +109,7 @@ hr {
 @media screen and (min-width: 992px) {
   .card {
     max-width: 40vw;
+    min-width: 40vw;
     width: 40vw;
     font-size: 1.2vw;
   }
@@ -124,6 +125,7 @@ hr {
   overflow: hidden;
   padding: 0px;
   display: inline-flex;
+  align-items: center;
 }
 .about h2 {
   margin-bottom: 0px;
@@ -144,6 +146,7 @@ hr {
 }
 .about p {
   text-align: left;
+  padding-right: 2px;
 }
 
 .display-6 {

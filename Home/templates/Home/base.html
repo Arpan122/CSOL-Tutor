@@ -31,6 +31,9 @@
                     <ul class="navbar-nav mb-auto mb-2 mb-lg-0">
                         {% if user.is_authenticated %}
                             <li class="nav-item">
+                                <a href="/dash" class="nav-link">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="/logout">Logout</a>
                             </li>
                         {% else %}
@@ -46,20 +49,41 @@
             </div>
         </nav>
 
-        {% if messages %}
-            {% for msg in messages %}
-                <div class="alert alert-{{ msg.tags }}">
-                    {{ msg }}
-                </div>
-            {% endfor %}
-        {% endif %}
-
         {% block body %}
         {% endblock %}
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/toastr@2.1.4/toastr.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastr@2.1.4/build/toastr.min.css">
+
         <script src="{% static 'Home/home.js' %}?{% now 'U' %}"></script>
+        <script>
+            $(document).ready(function () {
+                {% for message in messages %}
+                    var message = "{{ message}}";
+                    var tags = "{{ message.tags }}";
+                    
+                    toastr.options = {
+                        closeButton: true,
+                        progressBar: true,
+                        positionClass: "toast-bottom-right",
+                        showMethod: 'slideDown',
+                        timeOut: 3000
+                    };
+
+                    if (tags === 'success') {
+                        toastr.success(message);
+                    } else if (tags === 'error') {
+                        toastr.success(message);
+                    } else if (tags === 'info') {
+                        toastr.success(message);
+                    } else {
+                        toastr.success(message);
+                    }
+                {% endfor %}
+            });
+        </script>
     </body>
 </html>
