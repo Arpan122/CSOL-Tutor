@@ -120,21 +120,39 @@ hr {
 }
 
 //Mission Section
-#mission {
+#mission,
+#activities {
     p {
         margin: auto;
         width: 85%;
         text-align: center;
     }
+
+    h2 {
+        margin: auto;
+        text-align: center;
+        font-weight: 500;
+    }
 }
 
 //Leadership section
 #leads {
-    div {
-        div {
-            background-color: #808CED;
-            border-radius: 10px;
-        }
+    .card {
+        background-color: #808CED;
+        border-radius: 10px;
+    }
+}
+
+.about-activities {
+    margin: auto;
+    border-radius: 10px;
+    max-width: 85%;
+
+    background-color: rgba($color: #808CED, $alpha: 0.7);
+    transition: background-color 0.7s;
+
+    &:hover, &:focus, &:active {
+        background-color: rgba($color: #6575f1, $alpha: 1.0);
     }
 }
 

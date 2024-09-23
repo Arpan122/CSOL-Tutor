@@ -82,15 +82,33 @@ hr {
   text-align: center;
 }
 
-#mission p {
+#mission p,
+#activities p {
   margin: auto;
   width: 85%;
   text-align: center;
 }
+#mission h2,
+#activities h2 {
+  margin: auto;
+  text-align: center;
+  font-weight: 500;
+}
 
-#leads div div {
+#leads .card {
   background-color: #808CED;
   border-radius: 10px;
+}
+
+.about-activities {
+  margin: auto;
+  border-radius: 10px;
+  max-width: 85%;
+  background-color: rgba(128, 140, 237, 0.7);
+  transition: background-color 0.7s;
+}
+.about-activities:hover, .about-activities:focus, .about-activities:active {
+  background-color: #6575f1;
 }
 
 .r {
