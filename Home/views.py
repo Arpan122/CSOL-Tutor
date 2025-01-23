@@ -4,6 +4,7 @@ from .forms import UserRegisterForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, logout, authenticate
+from django.contrib.auth.models import User
 
 # Create your views here.
 def home(request):
@@ -17,6 +18,8 @@ def register(request):
             username = form.cleaned_data.get('username')
             messages.success(request, f'Account created for {username}. You can now login.')
             return redirect('Home-login')
+        else:
+            messages.error(request, 'Registration failed. Please try again.')
     else:
         form = UserRegisterForm()
     return render(request, "Home/register.html", {'form': form})
@@ -49,4 +52,6 @@ def customLogout(request):
 
 @login_required
 def dashboard(request):
-    return render(request, "Home/dashboard.html")
+    user = request.user
+    content = {"userData": user}
+    return render(request, "Home/dashboard.html", content)

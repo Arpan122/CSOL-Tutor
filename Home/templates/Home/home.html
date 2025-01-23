@@ -11,7 +11,7 @@
         <a class="nav-link" href="#mission">Mission</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#activites">Activities</a>
+        <a class="nav-link" href="#activities">Activities</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="#leads">Leadership</a>
@@ -71,7 +71,7 @@
             <section id="leads" class="section">
                 <h1 class="display-4">Leadership</h1>
 
-                <div class="r">
+                <div class="row row-cols-2 justify-content-center">
                     <div class="card">
                         <div class="about">
                             <img src="{% static 'Home/images/guy.jpg' %}" class="align-self-center">
@@ -83,7 +83,6 @@
                             </div>
                         </div>
                     </div>
-    
                     <div class="card">
                         <div class="about">
                             <img src="{% static 'Home/images/guy.jpg' %}" class="align-self-center">
@@ -95,11 +94,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <hr class="divider-hr" style="color: transparent; height: 1px; padding: 0px; margin-top: 2px; ">
-                
-                <div class="r">
                     <div class="card">
                         <div class="about">
                             <img src="{% static 'Home/images/guy.jpg' %}" class="align-self-left">
@@ -125,9 +119,9 @@
                 </div>
             </section>
             
-            <section id="calendar" class="section align-items-center justify-content-center">
+            <section id="calendar" class="section align-items-center justify-content-center" style="display: grid;">
                 <h1 class="display-4">Calendar</h1>
-                <iframe class="align-self-center" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FVancouver&bgcolor=%23808CED&showTitle=0&src=MmQ0ZjVkMjU1ODk0MTQzNzkyM2YxZTViZTdiOGRlYzIwNzBmNjdiYmE5OGQxZTYxNGRmZjYyMGQ2NWE5NmYxN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%233F51B5&color=%230B8043" style="border-width:0; margin:10px auto;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                <iframe class="justify-content-center" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FVancouver&bgcolor=%23808CED&showTitle=0&src=MmQ0ZjVkMjU1ODk0MTQzNzkyM2YxZTViZTdiOGRlYzIwNzBmNjdiYmE5OGQxZTYxNGRmZjYyMGQ2NWE5NmYxN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%233F51B5&color=%230B8043" style="border-width:0; margin:10px auto;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
             </section>
         </div>
         <section class="footer"></section>

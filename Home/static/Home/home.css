@@ -1,5 +1,5 @@
 body {
-  background-color: #A9ED80;
+  background-color: #a9ed80;
 }
 
 input[type=text],
@@ -108,7 +108,7 @@ hr {
   transition: background-color 0.7s;
 }
 .about-activities:hover, .about-activities:focus, .about-activities:active {
-  background-color: #6575f1;
+  background-color: #808ced;
 }
 
 .r {
@@ -180,4 +180,21 @@ h4 {
   height: 1px;
   padding: 0px;
   margin: 0px auto;
+}
+
+.dash-content {
+  max-width: 100%;
+}
+.dash-content * {
+  text-decoration: none !important;
+}
+.dash-content h1 {
+  text-align: center;
+}
+.dash-content .card {
+  height: 400px;
+  background-color: #808CED;
+}
+.dash-content .card * {
+  padding: 10px 0px;
 }/*# sourceMappingURL=home.css.map */
