@@ -4,7 +4,6 @@ from .forms import UserRegisterForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, logout, authenticate
-from django.contrib.auth.models import User
 
 # Create your views here.
 def home(request):
@@ -35,7 +34,12 @@ def customLogin(request):
             if user is not None:
                 login(request, user)
                 messages.success(request, 'You have logged in successfully!')
-                return redirect('Home-dashboard')
+                
+                if (request.GET.get('next')):
+                    return redirect(request.GET.get('next'))
+                else:
+                    return redirect('Home-dashboard')
+                
             else:
                 messages.error(request, 'Invalid username or password')
         else:
